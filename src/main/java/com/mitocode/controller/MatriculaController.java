@@ -30,7 +30,7 @@ public class MatriculaController {
         return ResponseEntity.ok(list);
     }
 
-    @GetMapping("/cursosMatrculados")
+    @GetMapping("/cursosPorEstudiante")
     public ResponseEntity<Map<String,  List<String>>> getCursosMatricula(){
         Map<String, List<String>> listMap = service.getCursosMatriculados3();
         return  ResponseEntity.ok(listMap);
